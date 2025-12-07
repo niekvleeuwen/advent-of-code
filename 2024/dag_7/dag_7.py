@@ -38,7 +38,7 @@ def read_input() -> list[Equation]:
     1. Open file
     2. Parse each equation
     """
-    with open("niek/dag_7/input.txt") as f:
+    with open("dag_7/input.txt") as f:
         return [Equation.parse(input_str) for input_str in f.read().splitlines()]
 
 

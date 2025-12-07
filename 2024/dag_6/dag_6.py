@@ -1,6 +1,5 @@
 from copy import deepcopy
 from enum import Enum
-from typing import Self
 
 PRINT = False
 
@@ -25,7 +24,7 @@ class Direction(Enum):
     DOWN = 3
     LEFT = 4
 
-    def next_direction(self) -> Self:
+    def next_direction(self) -> "Direction":
         """Next direction assuming a 90 degree turn."""
         v = self.value + 1
         if v > 4:
@@ -39,7 +38,7 @@ def read_input() -> list[list[str]]:
     1. Open file
     2. Return puzzle as 2D array
     """
-    with open("input.txt") as f:
+    with open("dag_6/input.txt") as f:
         return [list(line) for line in f.read().splitlines()]
 
 

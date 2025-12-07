@@ -16,7 +16,7 @@ def read_input() -> list[list[str]]:
     1. Open file
     2. Return puzzle as 2D array
     """
-    with open("niek/dag_8/input.txt") as f:
+    with open("dag_8/input.txt") as f:
         return [list(line) for line in f.read().splitlines()]
 
 

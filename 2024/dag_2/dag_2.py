@@ -6,7 +6,7 @@ def read_input() -> list[list[int]]:
     3. Convert to integers
     4. Sort the lists
     """
-    with open("2024/dag_2/input.txt") as f:
+    with open("dag_2/input.txt") as f:
         lines = f.read().splitlines()
 
     reports = []

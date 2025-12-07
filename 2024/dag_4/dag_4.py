@@ -4,7 +4,7 @@ SEARCH_PART_2 = ("MAS", "SAM")
 
 def read_input() -> list[list[str]]:
     """Read input as a 2D vector list."""
-    with open("2024/dag_4/input.txt") as f:
+    with open("dag_4/input.txt") as f:
         lines = f.read().splitlines()
 
     return [list(line) for line in lines]

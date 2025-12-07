@@ -5,7 +5,7 @@ def read_input() -> tuple[list, list]:
     2. Split the ordering rules and page updates
     3. Split the rules and updates into a list
     """
-    with open("2024/dag_5/input.txt") as f:
+    with open("dag_5/input.txt") as f:
         ordering_rules, page_updates = f.read().split("\n\n")
         ordering_rules = [page.split("|") for page in ordering_rules.splitlines()]
         page_updates = [page.split(",") for page in page_updates.splitlines()]

@@ -3,7 +3,7 @@ import re
 
 def read_input() -> str:
     """Read input."""
-    with open("2024/dag_3/input.txt") as f:
+    with open("dag_3/input.txt") as f:
         return f.read()
 
 
